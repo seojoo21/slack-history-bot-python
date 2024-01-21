@@ -38,12 +38,12 @@ class SlackChannelConversationsHistory:
         return all_messages
 
 # Usage
-if __name__ == "__main__":
-    slack_token = os.environ.get("SLACK_API_TOKEN", SLACK_API_TOKEN)
-    channel_id = os.environ.get("SLACK_CHANNEL_ID", SLACK_CHANNEL_ID)
+# if __name__ == "__main__":
+#     slack_token = os.environ.get("SLACK_API_TOKEN", SLACK_API_TOKEN)
+#     channel_id = os.environ.get("SLACK_CHANNEL_ID", SLACK_CHANNEL_ID)
     
-    slack_history = SlackChannelConversationsHistory(slack_token)
-    duration_in_days = 1  
-    messages = slack_history.fetch_all_messages(channel_id, duration_in_days)
-    for message in messages:
-        print(message)
+#     slack_history = SlackChannelConversationsHistory(slack_token)
+#     duration_in_days = 1  
+#     messages = slack_history.fetch_all_messages(channel_id, duration_in_days)
+#     for message in messages:
+#         print(message)
